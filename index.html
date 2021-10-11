@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+<head>
+<title>Hamurabi Game</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+
+<h3>O <span id="kingAdjectiveSpan"></span> Hammurabi, this is year <span id="yearSpan"></span> of your <span id="reignAdjectiveSpan"></span> reign.</h3>
+
+
+<main id="main">
+
+  <div id="annualReport">
+    <p><span id="starvedSpan"></span> of your subjects starved this year.</p>
+    <p id="plagueP">A <span id="plagueAdjectiveSpan"></span> plague killed <span id="plagueSpan"></span> subject<span id="plagueS">s</span>.</p>
+    <p><span id="joinedSpan"></span> new subjects joined your <span id="empireAdjectiveSpan"></span> empire.</p>
+    <p>Your subjects harvested <span id="harvestedSpan"></span> bushels of grain
+      <p><span id="ratAdjectiveSpan"></span> rats ate <span id="ratsSpan"></span> bushels</p>
+    </div>
+
+    <div>
+
+      <div id="stats">
+        <div>Population <span id="popTD"></span></div>
+        <div>Bushels <span id="bushTD"></span></div>
+        <div>Acres <span id="acresTD"></span></div>
+      </div>
+
+      <fieldset id="fieldset">
+        <legend>What dost thou command?</legend>
+
+        <p>Give <input type="number" id="bushels2give" min="0"> bushels to subjects.</p>
+
+        <p id="buySellP">
+          <button id="BuyButton">Buy</button><button id="SellButton">Sell</button>
+          <input type="number" id="acres2buyOrSell" min="0"> acres <br />
+          (an acre is worth <span id="acrePrice"></span> bushels)
+        </p>
+
+        <p>Plant <input type="number" id="acres2plant" min="0"> acres.</p>
+
+	<p style="text-align:center"><span id="remainingSpan"></span> bushels remaining</p>
+        <div id="buttonP"><button id="continueButton">Continue</button></div>
+
+        <p id="bushelShortageP">Alas, there are not enough bushels to fulfill thy orders.</p>
+        <p id="landShortageP">Alas, there is not enough land to fulfill thy orders.</p>
+        <p id="popShortageP">Alas, there are not enough subjects to fulfill thy orders.</p>
+      </fieldset>
+
+    </div>
+
+  </main>
+
+  <h3 id="endH3">Alas, Hammurabi, thy empire is no more.</h3>
+  <h3 id="rebelH3">Hammurabi! Thy starving subjects have rebelled! Thy empire is no more.</h3>
+
+<script src="hamurabi.js"></script>
+
+<footer style="font-size:60%; text-align:center; margin-top:10em;">
+  <p><a href="/">Developed by Sean Brunnock</a></p>
+</footer>
+
+</body>
+</html>

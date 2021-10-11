@@ -1,0 +1,101 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+}
+
+*:focus {
+  outline: 0;
+}
+
+
+body {
+  background-image: url("papyrus.svg");
+  padding-top:1em;
+}
+
+body, button {
+  font:italic 20px  fantasy, Papyrus, New Century Schoolbook; 
+}
+
+input {
+ font:16px   fantasy, Papyrus;
+}
+
+input, button {
+ background-color:#fd8;
+ vertical-align:middle;
+}
+
+main {
+  margin:1em 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+main>div {
+  margin: 1ex;
+}
+
+h3 {
+  text-align:center;
+}
+
+#annualReport {
+    border: 3px dotted #c80;
+    box-shadow: 0 0  0 2px #c80, inset 0 0 0 2px #c80;
+    background-color: #fd8;
+}
+
+p {
+    margin:1ex;
+}
+
+#stats {
+  display: flex;
+}
+
+#stats div {
+    background-color:#fd8;
+    padding:1ex;
+    margin:1ex;
+}
+
+
+fieldset {
+  margin:1em auto;
+  border:3px ridge #c80;
+  width:18em;
+}
+
+fieldset p {
+  margin:1em 3ex;
+}
+
+legend {
+    text-align:center;
+    font-weight:bold;
+}
+
+input {
+  border-radius: 0;
+  width:4em;
+}
+
+button {
+  padding:2px;
+}
+
+#buySellP button {
+  width:6ex;
+  height:4ex;
+}
+
+#buttonP {
+  text-align:center;
+}
+
+#bushelShortageP, #landShortageP, #popShortageP, #endH3, #rebelH3 {
+  display:none;
+}
